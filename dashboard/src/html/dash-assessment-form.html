@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" sizes="16x16" href="../assets/images/logo.jpeg">
+    <title>Welcome to Desserve</title>
+    <!-- Custom CSS -->
+    <!-- Custom CSS -->
+    <link href="../dist/css/style.min.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar" data-navbarbg="skin6">
+            <nav class="navbar top-navbar navbar-expand-md">
+                <div class="navbar-header" data-logobg="skin6">
+                    <!-- This is for the sidebar toggle which is visible on mobile only -->
+                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!-- ============================================================== -->
+                    <!-- Logo -->
+                    <!-- ============================================================== -->
+                    <div class="navbar-brand">
+                        <!-- Logo icon -->
+                        <a href="dash-index.html">
+                            <b class="logo-icon">
+                                <!-- Dark Logo icon -->
+                                <img src="../assets/images/logo.jpeg" alt="homepage" class="dark-logo" style="width: 40px;" />
+                                
+                            </b>
+                            <!--End Logo icon -->
+                            <!-- Logo text -->
+                            <span class="logo-text">
+                               
+                                Desserve
+                                
+                            </span>
+                        </a>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Logo -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Toggle which is visible on mobile only -->
+                    <!-- ============================================================== -->
+                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+                        data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
+                            class="ti-more"></i></a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-left mr-auto ml-3 pl-1">
+                        <!-- Notification -->
+                       
+                        <!-- End Notification -->
+                        <!-- ============================================================== -->
+                        <!-- create new -->
+                        <!-- ============================================================== -->
+                       
+                       
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- Right side toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav float-right">
+                        <!-- ============================================================== -->
+                        <!-- Search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item d-none d-md-block">
+                            <a class="nav-link" href="javascript:void(0)">
+                                <form>
+                                    <div class="customize-input">
+                                        <input class="form-control custom-shadow custom-radius border-0 bg-white"
+                                            type="search" placeholder="Search" aria-label="Search">
+                                        <i class="form-control-icon" data-feather="search"></i>
+                                    </div>
+                                </form>
+                            </a>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="../assets/images/logo.jpeg" alt="user" class="rounded-circle"
+                                    width="40">
+                                <span class="ml-2 d-none d-lg-inline-block"><span>Hello,</span> <span
+                                        class="text-dark">Username</span> <i data-feather="chevron-down"
+                                        class="svg-icon"></i></span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right user-dd animated flipInY">
+                                <a class="dropdown-item" href="dash-settings.html"><i data-feather="user"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    My Profile</a>
+                                
+                                
+                                <div class="dropdown-divider"></div>
+                                
+                                <div style="display: none;" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)"><i data-feather="power"
+                                        class="svg-icon mr-2 ml-1"></i>
+                                    Logout</a>
+                                
+                            </div>
+                        </li>
+                        <!-- ============================================================== -->
+                        <!-- User profile and search -->
+                        <!-- ============================================================== -->
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+                <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar" data-sidebarbg="skin6">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar" data-sidebarbg="skin6"> <!--style="z-index: 1; position:absolute; -->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="dash-index.html"
+                                aria-expanded="false"><i class="fas fa-tachometer-alt"></i><span
+                                    class="hide-menu">Dashboard</span></a></li>
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">PATIENTS</span></li>
+
+                        <li class="sidebar-item"> <a class="sidebar-link" href="dash-assessment.html"
+                                aria-expanded="false"><i class="fas fa-calendar-alt"></i><span
+                                    class="hide-menu">Assessment
+                                </span></a>
+                        </li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="dashboard-services.html"
+                                aria-expanded="false"><i data-feather="message-square" class="feather-icon"></i><span
+                                    class="hide-menu">Services</span></a></li>
+                        <li class="sidebar-item"> <a style="display: none;" class="sidebar-link sidebar-link" href="app-calendar.html"
+                                aria-expanded="false"><i data-feather="calendar" class="feather-icon"></i><span
+                                    class="hide-menu">Calendar</span></a></li>
+
+                        <li class="list-divider"></li>
+                        <li class="nav-small-cap"><span class="hide-menu">MY PROFILE</span></li>
+                        <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="dash-settings.html"
+                            aria-expanded="false"><i class="fas fa-cog"></i><span
+                                class="hide-menu">Settings</span></a></li>
+                       
+                            </ul>
+                        </li>
+                </nav>
+            </div>
+        </aside>
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="page-breadcrumb">
+                <div class="row">
+                    <div class="col-12 align-self-center">
+                        <h3 class="page-title text-truncate text-dark font-weight-medium mb-1">Welcome, Username</h3>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                <div class="col-6 mt-4">
+                <div class="card">
+                <div class="card-body">
+                    <!-- personal data -->
+                <h4 class="card-title">Personal Data</h4>
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address</label>
+                      <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="telephone">Telephone</label>
+                          <input type="tel" class="form-control" id="telephone" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="nationality">Nationality</label>
+                          <input type="text" class="form-control" id="nationality" required>
+                        </div>
+                      </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="date" class="form-control" id="dateofbirth" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="gender">Gender</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="male" name="gender" class="custom-control-input" required>
+                            <label class="custom-control-label" for="male">Male</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="female" name="gender" class="custom-control-input" required>
+                            <label class="custom-control-label" for="female">Female</label>
+                          </div>                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- personal information end here -->
+ 
+        <!-- physical condition starts -->
+                <div class="col-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Physical Condition</h4>
+                            <p class="card-title text-muted">Check the boxes where applicable</p>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="cerebral-palsy">
+                                    <label class="custom-control-label" for="cerebral-palsy">Cerebral Palsy</label><br>
+                                </div> 
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="polio">
+                                    <label class="custom-control-label" for="polio">Polio</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="spinal-cord"
+                                        >
+                                    <label class="custom-control-label" for="spinal-cord">Spinal Cord Injury</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="stroke"
+                                        >
+                                    <label class="custom-control-label" for="stroke">Stroke</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="frail"
+                                        >
+                                    <label class="custom-control-label" for="frail">Frail</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="amputee"
+                                        >
+                                    <label class="custom-control-label" for="amputee">Amputee</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="bladder-problems"
+                                        >
+                                    <label class="custom-control-label" for="bladder-problems">Bladder Problems</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="spasm-and-uncontrolled-movements"
+                                        >
+                                    <label class="custom-control-label" for="spasm-and-uncontrolled-movements">Spasm and Uncontrolled Movements</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="bowel-problems"
+                                        >
+                                    <label class="custom-control-label" for="bowel-problems">Bowel Problems</label>
+                                </div>
+                            </div>
+                            <div class="form-check ">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="others"
+                                        >
+                                    <label class="custom-control-label" for="others">Others</label><input type="text" class="custom-control-input" id="customCheck3"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- physical condition ends here -->
+            </div>
+        <!-- row ends here -->
+            
+            <!-- do you experience starts here -->
+            <div class="row">
+                <div class="col-6 mt-4">
+                <div class="card">
+                <div class="card-body">
+                <h4 class="card-title">Do you experience any of the following? </h4>
+                    <p class="card-title text-muted">Check the boxes where applicable</p>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="muscle-stiffness">
+                        <label class="custom-control-label" for="muscle-stiffness">Muscle Stiffness</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="past-or-present-pressure-sore">
+                        <label class="custom-control-label" for="past-or-present-pressure-sore">Past or Present Pressure Sore</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="weakness">
+                        <label class="custom-control-label" for="weakness">Weakness</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="decreased-sensation">
+                        <label class="custom-control-label" for="decreased-sensation">Decreased Sensation</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="postural-deformity">
+                        <label class="custom-control-label" for="postural-deformity">Postural Deformity</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="bowel-and-bladder-control">
+                        <label class="custom-control-label" for="bowel-and-bladder-control">Bowel and Bladder Control</label>
+                    </div>
+                </div>
+                <div class="form-check">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="uncontrolled-movements">
+                        <label class="custom-control-label" for="uncontrolled-movements">Uncontrolled Movements</label>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- do you experience ends here -->
+
+<!-- life style and enviroment starts here -->
+                <div class="col-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Lifestyle and Enviroment</h4>
+                            <p class="card-title text-muted">Describe your house</p>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label class="col-lg-3">Floors</label>
+                                        <div class="col-lg-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="how many floors">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label class="col-lg-3">Doorways</label>
+                                        <div class="col-lg-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="narrow or wide doorways">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label class="col-lg-3">Steps</label>
+                                        <div class="col-lg-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="how many flight of stairs">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label class="col-lg-3">Topography</label>
+                                        <div class="col-lg-9">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="topography">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- lifesytle and enviroment ends here -->
+            </div>
+
+<!-- wheel chair usage starts here -->
+            <div class="row">
+                <div class="col-6 mt-4">
+                <div class="card">
+                <div class="card-body">
+                <h4 class="card-title">WheelChair Usage</h4>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-lg-6">How many hours per day?</label>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control"
+                                        placeholder="hours">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-lg-6">Distance Covered per day?</label>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control"
+                                        placeholder="Distance">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <label class="col-lg-6">How do you get in and out of the WheelChair</label>
+                        <div class="custom-control custom-radio col-lg-3">
+                            <input type="radio" class="custom-control-input" id="independently"
+                                name="howDoYouUseTheWheelChair">
+                            <label class="custom-control-label" for="independently">Independent</label>
+                        </div>
+                        <div class="custom-control custom-radio col-lg-3">
+                            <input type="radio" class="custom-control-input" id="assisted"
+                                name="howDoYouUseTheWheelChair">
+                            <label class="custom-control-label" for="assisted">Assisted</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                               
+                </div>
+            </div>
+        </div>
+                    <!-- wheelchair usage ends here -->
+
+                <div class="col-6 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Posture</h4>
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <label class="col-lg-8">Can the person sit at 90/90/90?</label>
+                                        <div class="col-lg-4">
+                                            <div class="form-check">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="sittingYes"
+                                                        name="sittingPosture">
+                                                    <label class="custom-control-label" for="sittingYes">Yes</label>
+                                                    
+                                                </div>
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" class="custom-control-input" id="sittingNo"
+                                                        name="sittingPosture">
+                                                    <label class="custom-control-label" for="sittingNo">No</label>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- wheel chair usage ends here -->
+                
+            <!-- sensation starts here -->
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Balance Assessment</h4>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person sit on the assessment bench independently?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="assessmentBenchYes"
+                                            name="assessmentBench">
+                                        <label class="custom-control-label" for="assessmentBenchYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="assessmentBenchNo"
+                                            name="assessmentBench">
+                                        <label class="custom-control-label" for="assessmentBenchNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person balance with hand resting on knees?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="restingHandKneesYes"
+                                            name="restingHandKnee">
+                                        <label class="custom-control-label" for="restingHandKneesYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="restingHandKneesNo"
+                                            name="restingHandKnee">
+                                        <label class="custom-control-label" for="restingHandKneesNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person balance with one hand on knee while raising the other arm?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="restingOneHandKneeYes"
+                                            name="restingOneHandKnee">
+                                        <label class="custom-control-label" for="restingOneHandKneeYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="restingOneHandKneeNo"
+                                            name="restingOneHandKnee">
+                                        <label class="custom-control-label" for="restingOneHandKneeNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person balance when raising both arms?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="raisingBothArmsYes"
+                                            name="raisingBothArms">
+                                        <label class="custom-control-label" for="raisingBothArmsYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="raisingBothArmsNo"
+                                            name="raisingBothArms">
+                                        <label class="custom-control-label" for="raisingBothArmsNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person reach with one arm away from the upright posture without losing balance?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="reachWithOneArmYes"
+                                            name="reachWithOneArm">
+                                        <label class="custom-control-label" for="reachWithOneArmYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="reachWithOneArmNo"
+                                            name="reachWithOneArm">
+                                        <label class="custom-control-label" for="reachWithOneArmNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-10">Can the person easily reach with both arms away and back into an uptight posture without losing balance?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="reachWithBothArmsYes"
+                                            name="reachWithBothArms">
+                                        <label class="custom-control-label" for="reachWithBothArmsYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="reachWithBothArmsNo"
+                                            name="reachWithBothArms">
+                                        <label class="custom-control-label" for="reachWithBothArmsNo">No</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-8">Sensation</label>
+                                    <div class="custom-control custom-radio col-lg-2">
+                                        <input type="radio" class="custom-control-input" id="reducedSensation"
+                                            name="sensation">
+                                        <label class="custom-control-label" for="reducedSensation">Reduced</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-2">
+                                        <input type="radio" class="custom-control-input" id="normalSensation"
+                                            name="sensation">
+                                        <label class="custom-control-label" for="normalSensation">Normal</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-6">Pressure Sores?</label>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="pressureSoreYes"
+                                            name="pressureSore">
+                                        <label class="custom-control-label" for="pressureSoreYes">Yes</label>
+                                    </div>
+                                    <div class="custom-control custom-radio col-lg-1">
+                                        <input type="radio" class="custom-control-input" id="pressureSoreNo"
+                                            name="pressureSore">
+                                        <label class="custom-control-label" for="pressureSoreNo">No</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="pressureSoreLeft"
+                                            name="radio-stacked">
+                                        <label class="custom-control-label" for="pressureSoreLeft">Left</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="pressureSoreRight"
+                                            name="radio-stacked">
+                                        <label class="custom-control-label" for="pressureSoreRight">Right</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="pressureSoreFront"
+                                            name="radio-stacked">
+                                        <label class="custom-control-label" for="pressureSoreFront">Front</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox col-lg-1">
+                                        <input type="checkbox" class="custom-control-input" id="pressureSoreBack"
+                                            name="radio-stacked">
+                                        <label class="custom-control-label" for="pressureSoreBack">Back</label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sensation ends here -->
+
+            <!-- body measurements starts here -->
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Body Measurements</h4>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-6">Hip Width</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="hip width">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-4">Upper Leg Length</label>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="left side">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="right side">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-4">Lower Leg Length</label>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="left side">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="right side">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-6">Bottom of Rib Cage (Low Back)</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="lower back">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <label class="col-lg-6">Bottom of Shoulder Blade (High Back)</label>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <input type="text" class="form-control"
+                                                    placeholder="upper back">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="submit" class="btn btn-lg btn-primary font-weight-large btn-block btn-rounded"><i class="fas fa-wheelchair"></i> &nbsp; Submit Assessment</button>
+                </div>
+            </div>
+
+        </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+                <!-- apps -->
+                <!-- apps -->
+                <script src="../dist/js/app-style-switcher.js"></script>
+                <script src="../dist/js/feather.min.js"></script>
+                <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+                <script src="../dist/js/sidebarmenu.js"></script>
+                <!--Custom JavaScript -->
+                <script src="../dist/js/custom.min.js"></script>
+                <!--This page JavaScript -->
+                <script src="../dist/js/pages/dashboards/dashboard1.min.js"></script>
+</body>
+           
+</html>
